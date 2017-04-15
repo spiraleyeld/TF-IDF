@@ -8,8 +8,6 @@ import sys
 import time
 from datetime import datetime
 from sklearn import feature_extraction  
-from sklearn.feature_extraction.text import TfidfTransformer  
-from sklearn.feature_extraction.text import CountVectorizer  
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 

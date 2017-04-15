@@ -79,3 +79,6 @@ for oneArticle in textWeightList:
 ### 將關鍵詞放進與其所對應的新聞
 for i in range(len(tagList)):
     allData[i]['Tag'] =tagList[i]
+    
+    
+    

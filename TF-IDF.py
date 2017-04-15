@@ -92,26 +92,3 @@ for oneArticle in textWeightList:
 ### 載入要parse的資料
 for i in range(len(tagList)):
     allData[i]['Tag'] =tagList[i]
-
-
-
-## 讀取檔案
-listName = []
-
-with open('nameList.txt','r',encoding='utf-8') as nl:
-    for line in nl:
-        name = line.split('\n')[0]
-        listName.append(name.lower())
-
-## 設定正規表達式
-reRule = '[a-zA-Z{" "}{\.}{\,}{\-}a-zA-Z]+'
-for i in range(0,len(ç)):
-    tagByName = []
-    oneNew = allData[i]['Content']
-    ## 透過正規表達留下英文詞彙
-    reResult=re.findall(reRule, oneNew)
-    for j in reResult:
-        ## 比對名字是否為mlb球員
-        if j.lower() in listName:
-            tagByName.append(j.lower())
-    allData[i]['TagByName'] = tagByName

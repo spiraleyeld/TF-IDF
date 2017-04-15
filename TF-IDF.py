@@ -1,17 +1,9 @@
 # coding:utf-8  
 ###  ====================== 後端測試區 - TF-IDF =========================
-import json
-import jieba
-import re
-import os  
-import sys 
-import time
+import json, jieba, re, os, sys, time
 from datetime import datetime
 from sklearn import feature_extraction  
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-
-
 
 ### 載入要parse的資料
 allData = []
@@ -53,9 +45,6 @@ textWeightList = []
 
 ## 用來裝前5權重值
 tagList = []
-
-
-
 
 ### TF-IDF 開始計算
 print('Start Tf-Idf')

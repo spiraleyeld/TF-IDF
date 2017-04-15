@@ -89,6 +89,6 @@ for oneArticle in textWeightList:
         tag.append(dict[i][0])
     tagList.append(tag)
         
-### 載入要parse的資料
+### 將關鍵詞放進與其所對應的新聞
 for i in range(len(tagList)):
     allData[i]['Tag'] =tagList[i]

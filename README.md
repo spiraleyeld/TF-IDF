@@ -1,10 +1,10 @@
-# TF-IDF
+# TF-IDF & Cosine Similarity
 
 內容:
 
 1.TF-IDF.py: 主要腳本
 
-  說明: 新聞載入 -> 繁體字典載入 -> 停用字典載入 -> TF-IDF計算
+  說明: 新聞載入 -> 繁體字典載入 -> 停用字典載入 -> TF-IDF計算 -> Cosine Similarity（相似文本比較）
 
 2.dict.txt-v2.big: 擴充繁體字典
 

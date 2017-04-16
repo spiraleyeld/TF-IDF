@@ -2,8 +2,7 @@
 
 內容:
 
-TF-IDF.py: 主要腳本
-
+TF-IDF.py: 主要腳本\n
 說明
 
 dict.txt-v2.big: 擴充繁體字典

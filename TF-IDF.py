@@ -4,6 +4,7 @@ import json, jieba, re, os, sys, time
 from datetime import datetime
 from sklearn import feature_extraction  
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 ### 載入要parse的資料
 allData = []
@@ -81,4 +82,12 @@ for i in range(len(tagList)):
     allData[i]['Tag'] =tagList[i]
     
     
+    
+### cosine_similarity 餘弦相似性
+### cosine_similarity(tfidf[i:i+1], tfidf)[0] 第i篇與全部文章比較相似性
+### cosine_similarity(tfIdf, tfIdf) ---> 全部文章交叉比較相似性
+array = cosine_similarity(tfIdf, tfIdf)
+
+for eachArray in array:
+    print(eachArray)
     
